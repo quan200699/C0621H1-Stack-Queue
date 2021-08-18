@@ -11,7 +11,7 @@ public class Student implements Comparable<Student> {
 
     @Override
     public int compareTo(Student o) {
-        if(this.age > o.age){ //sắp xếp từ bé -> lớn
+        if(this.name.compareTo(o.name) < 0){ //sắp xếp từ bé -> lớn
             return 1;
         }else {
             return -1;
